@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crud App</title>
+    <link rel="stylesheet" href="main.css" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Crud App With Local Storage</h2>
+      <div class="row">
+        <div class="form">
+          <div class="input">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter Name" />
+          </div>
+          <div class="input">
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" placeholder="Enter Age" />
+          </div>
+          <div class="input">
+            <label for="adress">Adress</label>
+            <input
+              type="text"
+              id="adress"
+              name="adress"
+              placeholder="Enter Adress"
+            />
+          </div>
+          <div class="input">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter Email"
+            />
+          </div>
+          <div class="btn">
+            <button onclick="addTask()">Add Data</button>
+            <button onclick="addTask()" class="update">Update</button>
+          </div>
+          <input type="hidden" id="editIndex" />
+        </div>
+        <button class="delall" onclick="deleteAll()">Delete All Tasks</button>
+      </div>
+      <hr />
+      <div class="row-table">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Adress</th>
+              <th>Email</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="tbody"></tbody>
+        </table>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

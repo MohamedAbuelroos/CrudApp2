@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+  color: #fff;
+}
+body {
+  /* background-color: red; */
+  background-image: linear-gradient(
+    to right,
+    #683ab7ae,
+    #673ab7,
+    #673ab7,
+    #683ab7ae
+  );
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Small  */
+@media (min-width: 768px) {
+  .container {
+    width: 650px;
+  }
+}
+/* Medium  */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* large  */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.container {
+  text-align: center;
+  margin: 10px auto;
+}
+.container h2 {
+  font-size: 30px;
+}
+.container .form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.container .form .input {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.form label {
+  padding: 5px 35px;
+  font-size: 20px;
+}
+.form input {
+  width: calc(100% - 20px);
+  margin: auto;
+  padding: 15px 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  color: black;
+  font-size: 18px;
+}
+.form .input {
+  width: 100%;
+}
+@media (min-width: 991px) {
+  .form .input {
+    width: calc(100% / 2);
+  }
+  .form input {
+    margin: 5px 20px;
+    padding: 15px 10px;
+  }
+}
+.btn {
+  margin: 20px 30px;
+}
+.form button {
+  color: black;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: #2196f3;
+  font-weight: bold;
+}
+.form button:hover {
+  background-color: #2195f3ca;
+}
+.row-table {
+  width: 100%;
+  padding: 10px;
+}
+table {
+  width: 85%;
+  border: 1px solid white;
+  /* margin-top: 40px; */
+  margin: 40px auto 0;
+}
+
+table th {
+  background-color: #e8e8e8;
+  padding: 10px;
+  color: black;
+}
+table td {
+  background-color: #e8e8e8;
+  padding: 10px;
+  color: black;
+}
+.edit {
+  color: black;
+  padding: 5px 15px;
+  border: none;
+  background-color: #03a9f4;
+  border-radius: 3px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.update {
+  background-color: #4caf50 !important;
+  display: none;
+}
+.edit:hover,
+.delete:hover,
+.update:hover {
+  opacity: 0.8;
+}
+.delete {
+  color: black;
+  padding: 5px 15px;
+  border: none;
+  background-color: #e91e63;
+  border-radius: 3px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.delall {
+  color: black;
+  padding: 5px 20px;
+  font-size: 22px;
+}
